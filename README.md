@@ -24,7 +24,7 @@ $ git config --global user.email SEU_EMAIL@exemplo.br
 Ao abrir o VS code, execute os passos abaixo para baixar o projeto:
 1) Clique na opção Source Control (CTLR+Shift+G G);
 2) Clique em "Clone Repository";
-3) E digite o seguinte caminho "https://gitlab.prodesp.sp.gov.br/ssp/dipol/qa/balcao-unico.git"
+3) E digite o seguinte caminho "https://github.com/tguazelli/Automacao-de-testes"
 4) E selecione a pasta onde será armazenado o projeto.
 
 ## ⚙️ Executando os testes
