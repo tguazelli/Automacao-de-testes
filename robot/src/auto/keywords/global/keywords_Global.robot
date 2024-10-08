@@ -36,25 +36,25 @@ Parametros navegador
     Call Method    ${chromeOptions}    add_argument    --no-warn-script-location    # suprimir avisos
     # Call Method    ${chromeOptions}    add_argument    --start-maximized            # Inicializa o navegador maximizado
 
-    Open Browser    
-    ...    url=${link.${ambiente}}
-    ...    browser=${BROWSER}
-    ...    options=${chromeOptions}
+#     Open Browser    
+#     ...    url=${link.${ambiente}}
+#     ...    browser=${BROWSER}
+#     ...    options=${chromeOptions}
     
-    Validar Presenca    //*[@id="kc-form-login"]
+#     Validar Presenca    //*[@id="kc-form-login"]
     
 
-Realizar login com perfil de "${perfil}"
-    Validar Presenca    //*[@id="kc-form-login"]
+# Realizar login com perfil de "${perfil}"
+#     Validar Presenca    //*[@id="kc-form-login"]
     
-    Preencher Campo     ${inpt_CampoLogin}    ${login.${perfil}}
-    Preencher Campo     ${inpt_CampoSenha}    ${login.psw}
-    Clicar em           ${btn_BotaoEntrar}
+#     Preencher Campo     ${inpt_CampoLogin}    ${login.${perfil}}
+#     Preencher Campo     ${inpt_CampoSenha}    ${login.psw}
+#     Clicar em           ${btn_BotaoEntrar}
 
-    Validar Presenca    ${menu_lateral}
+#     Validar Presenca    ${menu_lateral}
 
-Apagando arquivos download
-    ${arquivos}    List Directory    ${downloadDir}    #    pattern=*.pdf
-    FOR    ${arquivo}    IN    @{arquivos}
-        Remove File    ${downloadDir}${/}${arquivo}
-    END
+# Apagando arquivos download
+#     ${arquivos}    List Directory    ${downloadDir}    #    pattern=*.pdf
+#     FOR    ${arquivo}    IN    @{arquivos}
+#         Remove File    ${downloadDir}${/}${arquivo}
+#     END

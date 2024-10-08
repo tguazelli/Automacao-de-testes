@@ -1,7 +1,5 @@
 link:
-  spj_dev: https://spj-dev.ipe-policiacivil.sp.gov.br
-  spj_hom: https://spj-hom.ipe-policiacivil.sp.gov.br/
-
+  spj_dev: https://demo.automationtesting.in/Register.html
 
 login:
   perfil_adm: 236046275
