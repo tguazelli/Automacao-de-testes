@@ -1,0 +1,25 @@
+### robotframework ###
+*.xml
+log.html
+output.xml
+report.html
+results/
+reports/
+robot/arquivos/downloads
+*.pyc
+*.pyo
+
+
+### VisualStudioCode ###
+.vscode/
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
