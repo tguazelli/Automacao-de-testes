@@ -14,7 +14,7 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.prodesp.sp.gov.br/ssp/dipol/qa/balcao-unico.git
+git remote add origin https://github.com/tguazelli/Automacao-de-testes
 git branch -M master
 git push -uf origin master
 ```
