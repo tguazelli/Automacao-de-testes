@@ -21,7 +21,7 @@ git push -uf origin master
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.prodesp.sp.gov.br/ssp/dipol/qa/balcao-unico/-/settings/integrations)
+- [ ] [Set up project integrations]https://github.com/tguazelli/Automacao-de-testes
 
 ## Collaborate with your team
 
