@@ -3,7 +3,7 @@ Resource    ../../../config/package.robot
 
 *** Variables ***
 ${BROWSER}    chrome
-${ambiente}    spj_dev
+${ambiente}    orange_dev
 
 
 *** Keywords ***
@@ -34,22 +34,22 @@ Parametros navegador
     Call Method    ${chromeOptions}    add_argument    --lang\=pt-BR                # define PT-BR como padrão
     Call Method    ${chromeOptions}    add_argument    --window-size\=1336,768      # define resolução
     Call Method    ${chromeOptions}    add_argument    --no-warn-script-location    # suprimir avisos
-    # Call Method    ${chromeOptions}    add_argument    --start-maximized            # Inicializa o navegador maximizado
+    Call Method    ${chromeOptions}    add_argument    --start-maximized            # Inicializa o navegador maximizado
 
-#     Open Browser    
-#     ...    url=${link.${ambiente}}
-#     ...    browser=${BROWSER}
-#     ...    options=${chromeOptions}
+    Open Browser    
+    ...    url=${link.${ambiente}}
+    ...    browser=${BROWSER}
+    ...    options=${chromeOptions}
     
-#     Validar Presenca    //*[@id="kc-form-login"]
+    Validar Presenca    //img[contains(@alt,'company-branding')]
     
 
-# Realizar login com perfil de "${perfil}"
-#     Validar Presenca    //*[@id="kc-form-login"]
+Realizar login com perfil de "${perfil}"
+    Validar Presenca        //img[contains(@alt,'company-branding')]
     
-#     Preencher Campo     ${inpt_CampoLogin}    ${login.${perfil}}
-#     Preencher Campo     ${inpt_CampoSenha}    ${login.psw}
-#     Clicar em           ${btn_BotaoEntrar}
+    Preencher Campo     ${inpt_CampoLogin}    ${login.${perfil}}
+    Preencher Campo     ${inpt_CampoSenha}    ${login.psw}
+    Clicar em           ${btn_BotaoEntrar}
 
 #     Validar Presenca    ${menu_lateral}
 

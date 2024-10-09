@@ -16,3 +16,7 @@
 # Para elementos do tipo loading(carregando, salvando, registrando, aguarde...): "loading"
 
 *** Variables ***
+
+${inpt_CampoLogin}     //input[contains(@name,'username')]
+${inpt_CampoSenha}     //input[contains(@type,'password')]
+${btn_BotaoEntrar}     //button[@type='submit'][contains(.,'Login')]
