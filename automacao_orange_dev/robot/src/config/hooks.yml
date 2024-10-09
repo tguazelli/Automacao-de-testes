@@ -1,0 +1,10 @@
+link:
+  dev: https://spj-dev.ipe-policiacivil.sp.gov.br
+
+
+login:
+  perfil_adm: 236046275
+  psw: (COLOCAR A SENHA AQUI)
+
+link_API:
+  url_api:  https://www.4devs.com.br/ferramentas_online.php
