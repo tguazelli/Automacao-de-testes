@@ -2,7 +2,7 @@ link:
   orange_dev: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
 login:
-  perfil_adm: Admin
+  perfil: Admin
   psw: admin123
 
 link_API:

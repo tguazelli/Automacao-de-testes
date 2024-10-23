@@ -13,6 +13,7 @@ Variables    hooks.yml
 Resource    ../auto/keywords/global/keywords_Global.robot
 Resource    ../auto/keywords/global/Keywords_modelos.robot
 Resource    ../auto/keywords/global/Keywords_Gerador_dados.robot
+Resource    ../auto/keywords/demo/Keyword.robot
 
 
 # Pages

@@ -35,6 +35,7 @@ Parametros navegador
     Call Method    ${chromeOptions}    add_argument    --window-size\=1336,768      # define resolução
     Call Method    ${chromeOptions}    add_argument    --no-warn-script-location    # suprimir avisos
     Call Method    ${chromeOptions}    add_argument    --start-maximized            # Inicializa o navegador maximizado
+    Call Method    ${chromeOptions}    add_argument    --incognito                  # navegador modo anonimo
 
     Open Browser    
     ...    url=${link.${ambiente}}
@@ -44,14 +45,18 @@ Parametros navegador
     Validar Presenca    //img[contains(@alt,'company-branding')]
     
 
-Realizar login com perfil de "${perfil}"
-    Validar Presenca        //img[contains(@alt,'company-branding')]
-    
-    Preencher Campo     ${inpt_CampoLogin}    ${login.${perfil}}
-    Preencher Campo     ${inpt_CampoSenha}    ${login.psw}
-    Clicar em           ${btn_BotaoEntrar}
+Realizar login     
+    ${login}     Get Text         ${msg_login}
+    ${login}     Get Substring    ${msg_login}  58    63    
 
-#     Validar Presenca    ${menu_lateral}
+    ${senha}     Get Text         ${msg_senha}
+    ${senha}     Get Substring    ${msg_senha}    58    66
+
+    Preencher Campo               ${inpt_CampoLogin}    ${login}
+    Preencher Campo               ${inpt_CampoSenha}    ${senha}
+    Clicar em                     ${btn_BotaoEntrar}
+
+    Validar Presenca        //img[contains(@alt,'client brand banner')]
 
 # Apagando arquivos download
 #     ${arquivos}    List Directory    ${downloadDir}    #    pattern=*.pdf

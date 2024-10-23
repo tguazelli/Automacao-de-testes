@@ -16,7 +16,18 @@
 # Para elementos do tipo loading(carregando, salvando, registrando, aguarde...): "loading"
 
 *** Variables ***
+#######################################################
+######################lOGIN############################
+#######################################################
+${msg_login}                 //p[@class='oxd-text oxd-text--p'][contains(.,'Username : Admin')]
+${msg_senha}                 //p[@class='oxd-text oxd-text--p'][contains(.,'Password : admin123')] 
+${btn_adm}                   //span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][contains(.,'Admin')]
+${inpt_CampoLogin}           //input[contains(@name,'username')]
+${inpt_CampoSenha}           //input[contains(@type,'password')]
+${btn_BotaoEntrar}           //button[@type='submit'][contains(.,'Login')]
+#######################################################
+###################FUNCIONALIDADES#####################
+#######################################################
+${menu_my_info}              //span[@class="oxd-text oxd-text--span oxd-main-menu-item--name"][contains(.,'My Info')]
+${menu_adm}                  //span[@class="oxd-text oxd-text--span oxd-main-menu-item--name"][contains(.,'Admin')]
 
-${inpt_CampoLogin}     //input[contains(@name,'username')]
-${inpt_CampoSenha}     //input[contains(@type,'password')]
-${btn_BotaoEntrar}     //button[@type='submit'][contains(.,'Login')]
