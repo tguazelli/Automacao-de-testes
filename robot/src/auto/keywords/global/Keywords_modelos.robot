@@ -36,8 +36,11 @@ Selecionar Combo Box
     [Arguments]                          ${element}    ${text}
     Clicar em                            ${element}
     Wait Until Element Is Visible        ${element}
-    Clicar em                            //li[contains(.,"${text}")]
-    Wait Until Element Is Not Visible    //li[contains(.,"${text}")]
+    # Clicar em                            //li[contains(.,"${text}")]
+    # Wait Until Element Is Not Visible    //li[contains(.,"${text}")]
+    Clicar em                            //div[@role='option']//span[contains(.,"${text}")]
+    Wait Until Element Is Not Visible    //div[@role='option']//span[contains(.,"${text}")]
+
 
 Validar Presenca
     [Arguments]                      ${element}
@@ -58,4 +61,9 @@ Validar Presenca
 Validar loading
     [Arguments]                          ${element}
     Wait Until Element Is Visible        ${element}
-    Wait Until Element Is Not Visible    ${element}
+    Wait Until Element Is Not Visible    ${element} 
+Limpar campos e preencher
+    [Arguments]                          ${element}    ${text}
+    Clicar em                            ${element}
+    Press Keys                           ${element}     CTRL+A+DELETE
+    Input Text                           ${element}    ${text}

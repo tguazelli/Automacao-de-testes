@@ -2,6 +2,9 @@ robotframework
 setuptools
 robotframework-seleniumlibrary
 robotframework-requests
+robotframework-screencaplibrary
+numpy==1.26.4
 pyyaml
 robotframework-faker
 beautifulsoup4
+robotframework-browser

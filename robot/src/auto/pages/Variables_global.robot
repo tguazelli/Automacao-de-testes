@@ -30,4 +30,31 @@ ${btn_BotaoEntrar}           //button[@type='submit'][contains(.,'Login')]
 #######################################################
 ${menu_my_info}              //span[@class="oxd-text oxd-text--span oxd-main-menu-item--name"][contains(.,'My Info')]
 ${menu_adm}                  //span[@class="oxd-text oxd-text--span oxd-main-menu-item--name"][contains(.,'Admin')]
-
+#######################################################
+#################FUNCIONALIDADE MY INFO################
+#######################################################
+${txt_personal_details}      //h6[@class="oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module"]
+${input_firstname}           //input[@name="firstName"]
+${input_middlename}          //input[@name="middleName"]           
+${input_lastname}            //input[@name="lastName"]
+${input_employee_id}         (//input[@data-v-1f99f73c])[5]
+${input_other_id}            (//input[@data-v-1f99f73c])[6]
+${input_driver_license_number}    (//input[@data-v-1f99f73c])[7]
+# ${cmb_license_expiry_date}    //input[@placeholder="D, dd M yyyy"]
+${cmb_license_expiry_date}    //input[@placeholder="yyyy-dd-mm"]
+${cmb_Nationality}            (//i[@class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"])[1]
+${bnt_save}                   (//button[@type='submit'][contains(.,'Save')])[1]
+# ${bnt_American}               //div[@role='option']//span[contains(.,"Albanian")]       ###SÓ EM CASO DE CLICAR EM         
+${cmb_marital_status}         (//i[@class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"])[2]
+# ${input_date_of_birth}        (//input[@placeholder="D, dd M yyyy"])[2]
+${input_date_of_birth}        (//input[@placeholder="yyyy-dd-mm"])[2]
+${bnt_male}                   //span[@class="oxd-radio-input oxd-radio-input--active --label-right oxd-radio-input"]
+${bnt_add}                    //button[@type='button'][contains(.,'Add')]
+${cmb_blood}                  (//i[@class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"])[3]
+${bnt_b+}                     //div[@role='option']//span[contains(.,"B+")]                
+${input_Test_Field}           (//input)[12]
+${bnt_browser}                //div[@class='oxd-file-button'][contains(.,'Browse')]
+${bnt_select_file}                       //input[contains(@type,'file')]
+${arquivo_pdf}                C:\\Users\\Magna\\Documents\\TIAGO
+${txt_comment}                //textarea[@placeholder="Type comment here"]
+${bnt_cancel}                 //button[@type='button'][contains(.,'Cancel')]
